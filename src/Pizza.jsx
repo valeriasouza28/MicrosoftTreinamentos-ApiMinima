@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PizzaList from "./PizzaList";
+import Button from "@mui/material/Button";
 
 const term = "Pizza";
 const API_URL = "/pizzas";
@@ -75,6 +76,14 @@ function Pizza() {
                 onUpdate={handleUpdate}
                 onDelete={handleDelete}
             />
+
+            {/* onClick={incrementCounter} */}
+
+            <button>Increment</button>
+
+            {/* replace with this Design System component  */}
+            {/* onClick={incrementCounter} */}
+            <Button>Increment</Button>
         </div>
     );
 }
